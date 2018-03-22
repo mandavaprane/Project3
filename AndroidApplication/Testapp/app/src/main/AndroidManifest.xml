@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="practice.testapp">
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:icon="@drawable/ic_launcher">
+        <activity
+            android:name="practice.testapp.SplashActivity"
+            android:screenOrientation="portrait"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Help"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ConnectActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="practice.testapp.HostingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="practice.testapp.DeviceListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="practice.testapp.GameActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="practice.testapp.ScoresActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask">
+        </activity>
+    </application>
+</manifest>

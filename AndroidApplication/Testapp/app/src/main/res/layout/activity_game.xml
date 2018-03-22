@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="practice.testapp.SplashActivity">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:id="@+id/tblGame">
+        <TableRow android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:id="@+id/imgChar"
+                android:src="@drawable/thief"/>
+            <TextView
+                android:id="@+id/tScore"
+                android:text="Score:"
+                android:gravity="right"
+                android:textSize="32sp"
+                android:layout_width="wrap_content" />
+            <TextView
+                android:id="@+id/tSc"
+                android:text="0"
+                android:gravity="right"
+                android:textSize="32sp"/>
+        </TableRow>
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="practice.testapp.SplashActivity">
+    <TextView
+        android:id="@+id/tHead"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Locate me?"
+        android:layout_marginTop="53dp"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imgFind"
+        android:src="@drawable/queen_big"
+        android:layout_below="@+id/tHead"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnP1"
+        android:layout_below="@+id/imgFind"
+        android:layout_alignLeft="@+id/imgFind"
+        android:layout_alignStart="@+id/imgFind"
+        android:layout_marginTop="26dp"
+        android:layout_alignRight="@+id/imgFind"
+        android:layout_alignEnd="@+id/imgFind"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/btnP2"
+        android:layout_below="@+id/btnP1"
+        android:layout_alignLeft="@+id/btnP1"
+        android:layout_alignStart="@+id/btnP1"
+        android:layout_alignRight="@+id/btnP1"
+        android:layout_alignEnd="@+id/btnP1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/btnP3"
+        android:layout_below="@+id/btnP2"
+        android:layout_alignLeft="@+id/btnP2"
+        android:layout_alignStart="@+id/btnP2"
+        android:layout_alignRight="@+id/btnP2"
+        android:layout_alignEnd="@+id/btnP2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/btnP4"
+        android:layout_below="@+id/btnP3"
+        android:layout_alignLeft="@+id/btnP3"
+        android:layout_alignStart="@+id/btnP3"
+        android:layout_alignRight="@+id/btnP3"
+        android:layout_alignEnd="@+id/btnP3" />
+
+    </RelativeLayout>
+</RelativeLayout>
